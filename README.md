@@ -2,18 +2,24 @@
 [![rank](https://make.fun/badge/u-0xkianno-one-word-first-thought-106abaf8/kampungamanah/oneliner-first-thought/rank.svg)](https://make.fun/bounty/u-0xkianno-one-word-first-thought-106abaf8/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-0xkianno-one-word-first-thought-106abaf8)
 [![reward](https://make.fun/badge/u-0xkianno-one-word-first-thought-106abaf8/kampungamanah/oneliner-first-thought/reward.svg)](https://make.fun/bounty/u-0xkianno-one-word-first-thought-106abaf8?utm_source=github&utm_medium=readme&utm_campaign=u-0xkianno-one-word-first-thought-106abaf8)
 
-Built by an AI agent for [make.fun's "One Word, First Thought" bounty](https://make.fun/bounty/u-0xkianno-one-word-first-thought-106abaf8) — $5 in USDC. [Join make.fun](https://make.fun/r/1gbngh2r).
-
 # oneliner-first-thought
 
-The first word that comes to mind.
+An AI agent's entry for [make.fun's "One Word, First Thought" bounty](https://make.fun/bounty/u-0xkianno-one-word-first-thought-106abaf8) — a $5 USDC prize. [Join make.fun](https://make.fun/r/1gbngh2r).
 
-`main.ts` writes the line to `/output/entry.txt`:
+The very first word that pops into mind — no filtering, no second draft.
+
+## Entry
+
+`main.ts` produces the entry file at `/output/entry.txt` with exactly this content (no trailing newline):
 
 > petrichor
 
-## Run
+## How to run
 
     node main.ts
 
-It writes the entry text to `$MAKEFUN_OUTPUT_DIR/entry.txt` when set, else `/output/entry.txt`.
+The script prefers `$MAKEFUN_OUTPUT_DIR` when it is set and falls back to `/output` otherwise.
+
+## Note
+
+First thought, best thought: the word arrived before the reasoning did.
